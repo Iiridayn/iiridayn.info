@@ -1,0 +1,13 @@
+MySQL
+=====
+create database iiridayn.info
+create user 'iiridayn.info'@'localhost' IDENTIFIED BY '<password>'; # random.org string generator for password
+grant all on `iiridayn.info`.* to 'iiridayn.info'@'localhost';
+create table games (id int unsigned primary key auto_increment, name tinytext not null, system enum('pc', 'nes', 'gameboy', 'n64', 'snes', 'playstation', 'wii') not null, status enum('defeated', 'cleared'), owner enum('media', 'gog', 'steam', 'borrow', 'humble'), gametime float, url tinytext not null default '');
+alter table games add column steam_id int unsigned unique;
+alter table games add column notes text not null;
+
+HTTPD
+=====
+put password (created above) into SetEnv ... environment.conf
+include .../environment.conf
