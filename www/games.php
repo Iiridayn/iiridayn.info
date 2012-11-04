@@ -10,6 +10,8 @@
 		<p>Strong text means that I've beat the game. Grouped by systems, somewhat chronological.</p>
 
 		<!-- gog, steam, media; cleared, defeated, cheated? -->
+	<!-- TODO: drop database - the website _is_ my database. -->
+	<!-- tricky, but I believe that I can work something out -->
 	<?php
 	$sql = <<<SQL
 		SELECT name, gametime, notes, system, status, owner, url
@@ -56,6 +58,19 @@ SQL;
 		</ul>
 	<?php endforeach; ?>
 
+		<!-- todo - real games? -->
+		<h2>Internet</h2>
+		<ul>
+			<li>NeoPets</li>
+			<li>Gaia Online</li>
+			<li>Project Entropia</li>
+			<li>Second Life</li>
+			<li>Merchant Empires</li>
+			<li>SkyLords</li>
+			<li>TryOrDie</li>
+			<li>EVE Online</li>
+		</ul>
+
 		<h2>Computer</h2>
 		<ul>
 			<li>Warcraft II</li>
@@ -93,21 +108,28 @@ SQL;
 			<li class="defeated">The Legend of Zelda: Orcarina of Time</li>
 		</ul>
 
-		<h2>SNES</h2>
+		<h2>SNES (emulated)</h2>
 		<ul>
 			<li>Final Fantasy VI (III to some people) - at final dungeon</li>
 			<li class="defeated">Megaman X</li>
 			<li class="defeated">Megaman X3</li>
 		</ul>
 
-		<h2>Play Station</h2>
+		<h2>Play Station (emulated)</h2>
 		<ul>
 			<li>Final Fantasy IX - at start of final dungeon</li>
 		</ul>
 
 		<h2>Wii</h2>
 		<ul>
-			<li></li>
+			<li>Mario Kart</li>
+			<li>Mario Party 8</li>
+		</ul>
+
+		<h2>Android</h2>
+		<ul>
+			<li>Angry Birds</li>
+			<li>Simon Tantham's Puzzles</li>
 		</ul>
 	</body>
 </html>
