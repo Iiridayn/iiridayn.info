@@ -3,3 +3,13 @@ books w/amazon integration (covers?, links at least).
 Android APK scanner w/postback
 Books + Movies + Series all need to be scanned
 Music, link to grooveshark?
+
+Books
+-----
+Barcode (UPC_A seems pretty common, along with EAN_13, an ISBN)
+ISBN (13 by preference)
+Title
+Author
+(tags)
+notes
+source (library/owned)
