@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__DIR__).'/environment.inc.php');
 require_once(dirname(__DIR__).'/db.inc.php');
 
 $ch = curl_init('http://steamcommunity.com/profiles/76561198017855079/games/?tab=all&xml=1');
@@ -11,8 +12,8 @@ curl_close($ch);
 
 $data = new SimpleXMLElement($xml);
 $sql = $db->prepare(<<<SQL
-	INSERT INTO games (name,system,owner,gametime,url,steam_id)
-	VALUES (?,'pc','steam',?,?,?)
+	INSERT INTO games (name,system,gametime,url,steam_id)
+	VALUES (?,'steam',?,?,?)
 	ON DUPLICATE KEY UPDATE gametime=VALUES(gametime), url=VALUES(url)
 SQL
 );
