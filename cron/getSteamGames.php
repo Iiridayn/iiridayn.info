@@ -14,7 +14,7 @@ $data = new SimpleXMLElement($xml);
 $sql = $db->prepare(<<<SQL
 	INSERT INTO games (name,system,gametime,url,steam_id)
 	VALUES (?,'steam',?,?,?)
-	ON DUPLICATE KEY UPDATE gametime=VALUES(gametime), url=VALUES(url)
+	ON DUPLICATE KEY UPDATE name=VALUES(name), gametime=VALUES(gametime), url=VALUES(url)
 SQL
 );
 foreach ($data->games->game as $game) {

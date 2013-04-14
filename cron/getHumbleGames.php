@@ -3,7 +3,8 @@ require_once(dirname(__DIR__).'/environment.inc.php');
 require_once(dirname(__DIR__).'/db.inc.php');
 require_once(dirname(__DIR__).'/download.inc.php');
 
-$humble = new WebsiteAPI('https://www.humblebundle.com/login', array(
+$humble = new WebsiteAPI();
+$humble->login('https://www.humblebundle.com/login', array(
 	'username' => $_SERVER['HIB_USERNAME'],
 	'password' => $_SERVER['HIB_PASSWORD'],
 ));
@@ -23,10 +24,11 @@ $nodes = $xpath->query(
 	.'/a'
 );
 
+$db->exec("DELETE FROM games WHERE system = 'humble'");
+
 $sql = $db->prepare(<<<SQL
 	INSERT INTO games (name,system,url)
 	VALUES (?,'humble',?)
-	ON DUPLICATE KEY UPDATE url=VALUES(url)
 SQL
 );
 foreach ($nodes as $node) {
