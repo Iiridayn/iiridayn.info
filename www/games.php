@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset='utf-8'>
+		<meta charset="utf-8">
 		<title>Iiridayn's Video Games</title>
 		<link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css" />
         <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
@@ -12,25 +12,25 @@
 		<p>Bold text means that I've beat the game. Grouped by systems, somewhat chronological (someday).</p>
 
 		<!-- gog, steam, media; cleared, defeated, cheated? -->
-	<!-- TODO: drop database - the website _is_ my database. -->
-	<!-- Should have start/end markers for each section, strreplace the inside -->
+		<!-- TODO: drop database - the website _is_ my database. -->
+		<!-- Should have start/end markers for each section, strreplace the inside -->
 	<?php
-	$sql = <<<SQL
-		SELECT name, gametime, notes, system, status, url
-		FROM games
-		ORDER BY system, name
+		$sql = <<<SQL
+			SELECT name, gametime, notes, system, status, url
+			FROM games
+			ORDER BY system, name
 SQL;
-	$system_games = array();
-	foreach ($db->query($sql) as $game) {
-		$system_games[$game['system']] []= $game;
-	}
+		$system_games = array();
+		foreach ($db->query($sql) as $game) {
+			$system_games[$game['system']] []= $game;
+		}
 
-	// localization
-	$systems = array(
-		'steam' => 'Steam',
-		'gog' => 'GOG.com',
-		'humble' => 'Humble Bundle (many from here to Steam)',
-	);
+		// localization
+		$systems = array(
+			'steam' => 'Steam',
+			'gog' => 'GOG.com',
+			'humble' => 'Humble Bundle (many from here to Steam)',
+		);
 	?>
 	<?php foreach ($system_games as $system => $games): ?>
 		<h2>Via <?= $systems[$system] ?></h2>
