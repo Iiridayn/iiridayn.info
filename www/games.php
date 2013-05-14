@@ -4,7 +4,8 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Iiridayn's Video Games</title>
-		<style>.defeated, .cleared { font-weight: bold; }</style>
+        <link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 	</head>
 	<body>
 		<h1>Video Games</h1>
@@ -36,13 +37,11 @@ SQL;
 		<ul class="<?= $system ?>">
 		<?php foreach ($games as $game): ?>
 			<li class="<?= $game['status'].' '.$game['owner'] ?>">
-				<?php if ($game['url']): ?>
-				<a href="<?= $game['url'] ?>">
-				<?php endif; ?>
-				<?= $game['name'] ?>
-				<?php if ($game['url']): ?>
-				</a>
-				<?php endif; ?>
+            <?php if ($game['url']): ?>
+                <a href="<?= $game['url'] ?>"><?= $game['name'] ?></a>
+            <?php else: ?>
+                <?= $game['name'] ?>
+            <?php endif; ?>
 				<?php if (!is_null($game['gametime'])): ?>
 				(<?= $game['gametime'] ?> hours)
 				<?php endif; ?>
@@ -66,7 +65,14 @@ SQL;
 			<li>TryOrDie</li>
 			<li><a href="http://www.hacker-project.com/">Hacker Project</a></li>
 			<li>EVE Online</li>
+			<li>Istaria</li>
 		</ul>
+
+        <h2>Flash games</h2>
+        <ul>
+            <li><a href="http://games.adultswim.com/robot-unicorn-attack-twitchy-online-game.html">Robot Unicorn Attack</a></li>
+            <li><a href="http://www.pages.drexel.edu/~mmj29/DIGM%20265/DragonRun.html">Dragon Run!</a></li>
+        </ul>
 
 		<h2>Computer - CD</h2>
 		<ul>
@@ -110,8 +116,8 @@ SQL;
 			<li>The Elder Scrolls: Daggerfall</li>
 			<li class="defeated">Nethack</li>
 			<li class="cleared">Cave Story</li>
-			<li class="cleared">Iji</li>
-			<li>Minecraft</li>
+			<li class="cleared"><a href="http://www.remar.se/daniel/iji.php">Iji</a></li>
+			<li><a href="http://minecraft.net/">Minecraft</a></li>
 		</ul>
 
 		<h2>NES</h2>
@@ -184,6 +190,7 @@ SQL;
 			<li class="cleared">Metroid: Other M</li>
 			<li class="defeated">Star Wars: The Force Unleashed</li>
 			<li>Dragon's Lair Trilogy</li>
+			<li>Ōkami</li>
 		</ul>
 
 		<h2>Gameboy Advanced (borrowed)</h2>
