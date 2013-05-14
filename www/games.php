@@ -4,7 +4,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Iiridayn's Video Games</title>
-        <link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css" />
         <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 	</head>
 	<body>
@@ -37,17 +37,17 @@ SQL;
 		<ul class="<?= $system ?>">
 		<?php foreach ($games as $game): ?>
 			<li class="<?= $game['status'].' '.$game['owner'] ?>">
-            <?php if ($game['url']): ?>
-                <a href="<?= $game['url'] ?>"><?= $game['name'] ?></a>
-            <?php else: ?>
-                <?= $game['name'] ?>
-            <?php endif; ?>
-				<?php if (!is_null($game['gametime'])): ?>
+			<?php if ($game['url']): ?>
+				<a href="<?= $game['url'] ?>"><?= $game['name'] ?></a>
+			<?php else: ?>
+				<?= $game['name'] ?>
+			<?php endif; ?>
+			<?php if (!is_null($game['gametime'])): ?>
 				(<?= $game['gametime'] ?> hours)
-				<?php endif; ?>
-				<?php if ($game['notes']): ?>
+			<?php endif; ?>
+			<?php if ($game['notes']): ?>
 				- <?= $game['notes'] ?>
-				<?php endif; ?>
+			<?php endif; ?>
 			</li>
 		<?php endforeach; ?>
 		</ul>
@@ -68,11 +68,11 @@ SQL;
 			<li>Istaria</li>
 		</ul>
 
-        <h2>Flash games</h2>
-        <ul>
-            <li><a href="http://games.adultswim.com/robot-unicorn-attack-twitchy-online-game.html">Robot Unicorn Attack</a></li>
-            <li><a href="http://www.pages.drexel.edu/~mmj29/DIGM%20265/DragonRun.html">Dragon Run!</a></li>
-        </ul>
+		<h2>Flash games</h2>
+		<ul>
+			<li><a href="http://games.adultswim.com/robot-unicorn-attack-twitchy-online-game.html">Robot Unicorn Attack</a></li>
+			<li><a href="http://www.pages.drexel.edu/~mmj29/DIGM%20265/DragonRun.html">Dragon Run!</a></li>
+		</ul>
 
 		<h2>Computer - CD</h2>
 		<ul>

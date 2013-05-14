@@ -1,74 +1,74 @@
 /* colors: http://ethanschoonover.com/solarized#the-values */
 body {
-    padding: 0.5em;
-    background-color: #002b36; /* base03 */
-    color: #839496; /* base0 */
+	padding: 0.5em;
+	background-color: #002b36; /* base03 */
+	color: #839496; /* base0 */
 }
 ul {
-    padding-left: 2em;
+	padding-left: 2em;
 }
 
 h1, h2, h3 {
-    color: #93a1a1; /* base1 */
+	color: #93a1a1; /* base1 */
 }
 h1 {
-    margin-top: 0;
+	margin-top: 0;
 }
 h2, h3 {
-    margin-bottom: 0.2em;
-    margin-top: 1em;
+	margin-bottom: 0.2em;
+	margin-top: 1em;
 }
 p {
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 h2+ul, h3+ul, h2+p, h3+p, p+ul, p+p {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 ::-moz-selection {
-    background: #b58900; /* yellow */
-    color: #93a1a1; /* base1 */
+	background: #b58900; /* yellow */
+	color: #93a1a1; /* base1 */
 }
 ::selection {
-    background: #b58900; /* yellow */
-    color: #93a1a1; /* base1 */
+	background: #b58900; /* yellow */
+	color: #93a1a1; /* base1 */
 }
 
 a {
-    color: #268bd2; /* blue */
+	color: #268bd2; /* blue */
 }
 a:visited {
-    color: #6c71c4; /* violet */
+	color: #6c71c4; /* violet */
 }
 a:hover {
-    background-color: #073642; /* base02 */
+	background-color: #073642; /* base02 */
 }
 
 
 /* games.php */
 .defeated, .cleared, .complete {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 /* ratings - bad -> good */
 .recent {
-    background-color: #073642; /* base02 */
+	background-color: #073642; /* base02 */
 }
 .fade, .hiatus {
-    color: #586e75; /* base01 */
+	color: #586e75; /* base01 */
 }
 .back {
-    color: #073642; /* base02 */
+	color: #073642; /* base02 */
 }
 .cara-r, .bad {
-    color: #dc322f; /* red */
+	color: #dc322f; /* red */
 }
 .cara-pg13, .nsg {
-    color: #cb4b16; /* orange */
+	color: #cb4b16; /* orange */
 }
 .cara-pg, .warning {
-    color: #b58900; /* yellow */
+	color: #b58900; /* yellow */
 }
 .cara-g, .good {
-    color: #859900; /* green */
+	color: #859900; /* green */
 }
