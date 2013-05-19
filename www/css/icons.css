@@ -1,0 +1,58 @@
+/* I'm using the rel='shortcut icon' for these */
+/* TODO: automate - most sites have good favicons */
+/* Privacy note: each of these sites not already cached will know that you've been here */
+/* NOTE: IE8 and below do not support background-size, might want to use conditional comments on this file */
+
+a[href*="youtube.com/"] {
+	background: transparent url("http://s.ytimg.com/yts/img/favicon-vfldLzJxy.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="wikipedia.org/"] {
+	background: transparent url("//en.wikipedia.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="imdb.com/"] {
+	background: transparent url("http://i.media-imdb.com/images/desktop-favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="fanfiction.net/"] {
+	background: transparent url("http://ffcdn2012.fictionpressllc.netdna-cdn.com/static/images/favicon_2010_site.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="furry.org.au/chakat/"] {
+	background: transparent url("http://furry.org.au/chakat/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="stackoverflow.com/"] {
+	background: transparent url("http://cdn.sstatic.net/stackoverflow/img/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="hulu.com/"] {
+	background: transparent url("http://www.hulu.com/fat-favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="mormon.org/"] {
+	background: transparent url("//edge.mormoncdn.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="lesswrong.com/"] {
+	background: transparent url("http://lesswrong.com/static/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}

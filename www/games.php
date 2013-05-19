@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 		<title>Iiridayn's Video Games</title>
 		<link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/icons.css" />
 	</head>
 	<body>
 		<h1>Video Games</h1>
@@ -118,6 +119,7 @@ SQL;
 			<li class="cleared">Cave Story</li>
 			<li class="cleared"><a href="http://www.remar.se/daniel/iji.php">Iji</a></li>
 			<li><a href="http://minecraft.net/">Minecraft</a></li>
+			<!-- TODO: Oregon trail @ labs, scorched earth, scorched 3d, whole pile of save files -->
 		</ul>
 
 		<h2>NES</h2>
@@ -154,6 +156,8 @@ SQL;
 			<li class="defeated">Megaman X3</li>
 			<li class="defeated">Chrono Trigger</li>
 			<li>Metal Warriors (friend's, 2 player only)</li>
+			<li class="rental">Yoshi's Island - few levels</li>
+			<li class="share">Street Fighter 2 - probably Turbo edition? Played a few times, lost quite badly</li>
 		</ul>
 
 		<h2>Dreamcast (friend's)</h2>
