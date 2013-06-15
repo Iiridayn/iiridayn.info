@@ -9,7 +9,7 @@ require_once(dirname(__DIR__).'/download.inc.php');
 
 $gog = new WebsiteAPI();
 
-$homepage = $gog->download('http://www.gog.com/');
+$homepage = $gog->request('http://www.gog.com/');
 //file_put_contents('goghomepage', $homepage);
 
 $ajax = $gog->ajax('http://www.gog.com/user/ajax', array(
@@ -27,7 +27,7 @@ $login = $gog->login('https://secure.gog.com/login', array(
 ));
 //file_put_contents('goglogin', $login);
 
-$games = $gog->download('https://secure.gog.com/account/games');
+$games = $gog->request('https://secure.gog.com/account/games');
 //file_put_contents('goggames', $games);
 
 $doc = new DOMDocument();

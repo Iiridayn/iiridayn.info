@@ -8,7 +8,7 @@ $humble->login('https://www.humblebundle.com/login', array(
 	'username' => $_SERVER['HIB_USERNAME'],
 	'password' => $_SERVER['HIB_PASSWORD'],
 ));
-$games = $humble->download('https://www.humblebundle.com/home');
+$games = $humble->request('https://www.humblebundle.com/home');
 
 $doc = new DOMDocument();
 libxml_use_internal_errors(true);
