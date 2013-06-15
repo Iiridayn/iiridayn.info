@@ -42,7 +42,6 @@ class WebsiteAPI {
 		);
 	}
 
-	// = download
 	public function request($url, $file = null, array $options = array()) {
 		return self::page(
 			$this->baseurl.$url, $file,
