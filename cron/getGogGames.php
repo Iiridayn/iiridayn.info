@@ -3,19 +3,20 @@ require_once(dirname(__DIR__).'/environment.inc.php');
 require_once(dirname(__DIR__).'/db.inc.php');
 require_once(dirname(__DIR__).'/download.inc.php');
 
-/**
- * This code is fairly brittle, so I've left the debugging statements commented out
- */
+// To preserve the downloaded content for debugging purposes, comment the
+// $rmdir line at the bottom of the file to prevent subsequent requests.
+// Note that login problems still need the file_put_content statements for now
+// TODO: we only need to log in if requesting something secure, login closure?
+$filedir = __DIR__.'/gog';
+if (!is_dir($filedir)) mkdir($filedir);
 
 $gog = new WebsiteAPI();
 
-$homepage = $gog->request('http://www.gog.com/');
-//file_put_contents('goghomepage', $homepage);
-
+//*
 $ajax = $gog->ajax('http://www.gog.com/user/ajax', array(
 	'a' => 'get', 'c' => 'frontpage', 'p1' => 'false', 'p2' => 'false', 'auth' => ''
 ));
-//file_put_contents('gogajax', $ajax);
+//file_put_contents($filedir.'/ajax', $ajax);
 $csrf = json_decode($ajax)->buk;
 
 $login = $gog->login('https://secure.gog.com/login', array(
@@ -25,10 +26,11 @@ $login = $gog->login('https://secure.gog.com/login', array(
 	'unlockSettings' => '1',
 	'buk' => $csrf,
 ));
-//file_put_contents('goglogin', $login);
+//file_put_contents($filedir.'/login', $login);
+//*/
 
-$games = $gog->request('https://secure.gog.com/account/games');
-//file_put_contents('goggames', $games);
+$gog->baseurl = 'https://secure.gog.com';
+$games = $gog->request('/account/games', $filedir.'/games');
 
 $doc = new DOMDocument();
 libxml_use_internal_errors(true);
@@ -44,12 +46,13 @@ $sql = $db->prepare(<<<SQL
 SQL
 );
 
-$query = 'https://secure.gog.com/account/ajax?a=gamesShelfDetails&g=';
+$query = '/account/ajax?a=gamesShelfDetails&g=';
 foreach ($nodes as $node) {
 	// have to query for each game
 	$gameid = $node->getAttribute('data-gameid');
-	$game = json_decode($gog->download($query.$gameid))->details->html;
-	//file_put_contents('goggame-'.$node->getAttribute('data-gameid'), $game);
+	$game = json_decode($gog->request(
+		$query.$gameid, $filedir.'/game-'.$gameid
+	))->details->html;
 
 	$gamedoc = new DOMDocument();
 	$gamedoc->loadHTML('<?xml encoding="utf-8">'.$game);
@@ -61,6 +64,15 @@ foreach ($nodes as $node) {
 		$gamenode->getAttribute('href'),
 		$gameid,
 	));
-
-	usleep(200000); // 0.2 second sleep to be more polite
 }
+
+$rmdir = function ($dir) use (&$rmdir) {
+	if (!is_dir($dir)) return false;
+	foreach (glob($dir.'/*') as $file) {
+		if (is_dir($file))
+			$rmdir($file);
+		else unlink($file);
+	}
+	return rmdir($dir);
+};
+$rmdir($filedir);
