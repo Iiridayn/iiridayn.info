@@ -1,7 +1,20 @@
-/* I'm using the rel='shortcut icon' for these */
-/* TODO: automate - most sites have good favicons */
+/*
+This file and its contents are released under CC-BY with the condition that you
+reference "iiridayn.info" in a source code comment in the file.
+See http://creativecommons.org/licenses/by/3.0/ for legalese.
+*/
+
+/* I'm using the rel='shortcut icon' for these (fallback: 'icon', then /favicon.ico) */
+/* TODO: automate - most sites have good favicons - test for https option */
 /* Privacy note: each of these sites not already cached will know that you've been here */
 /* NOTE: IE8 and below do not support background-size, might want to use conditional comments on this file */
+/* TODO: resolve privacy concern by using a local image forwarder - beware security concerns with it */
+
+a[href^="mailto:"] {
+	background: transparent url("data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA5ubmAOjo6AD///8AQkJCALCwsADJyckA2dnZAH19fQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREd3d3d3d3REdDMzMzM2RkQ3QzMzMzRzRDN0MUQTRzNEMxRUREVBM0QzdUQiRFczRHdUEzMxRXdEdEEzMzMUR0RGMzMzMzNoRERERERERERAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
 
 a[href*="youtube.com/"] {
 	background: transparent url("http://s.ytimg.com/yts/img/favicon-vfldLzJxy.ico") center left no-repeat;
@@ -53,6 +66,234 @@ a[href*="mormon.org/"] {
 
 a[href*="lesswrong.com/"] {
 	background: transparent url("http://lesswrong.com/static/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="gog.com/"] {
+	background: transparent url("http://static.gog.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="steamcommunity.com/"] {
+	background: transparent url("//steamcommunity.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="skylords.com/"] {
+	background: transparent url("//skylords.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="minecraft.net/"] {
+	background: transparent url("//minecraft.net/favicon.png") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="deviantart.com/"] {
+	background: transparent url("//i.deviantart.net/icons/favicon.png") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="deviantart.com/"] {
+	background: transparent url("//i.deviantart.net/icons/favicon.png") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="sofurry.com/"] {
+	background: transparent url("//www.sofurry.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="pinboard.in/"] {
+	background: transparent url("https://pinboard.in/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="news.ycombinator.com/"] {
+	background: transparent url("https://news.ycombinator.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="linkedin.com/"] {
+	background: transparent url("//linkedin.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="facebook.com/"] {
+	background: transparent url("//fbstatic-a.akamaihd.net/rsrc.php/yP/r/Ivn-CVe5TGK.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="plus.google.com/"] {
+	background: transparent url("//ssl.gstatic.com/s2/oz/images/faviconr3.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="pof.com/"] {
+	background: transparent url("//www.pof.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="github.com/"] {
+	background: transparent url("https://github.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="gate.eveonline.com/"] {
+	background: transparent url("https://gate.eveonline.com/eve_favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="www.eveonline.com/"] {
+	background: transparent url("//www.eveonline.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="community.eveonline.com/"] {
+	background: transparent url("//community.eveonline.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="creativecommons.org/"] {
+	background: transparent url("//creativecommons.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="sourceforge.net/"] {
+	background: transparent url("//sourceforge.net/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="indeed.com/"] {
+	background: transparent url("http://www.indeed.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="catb.org/"] {
+	background: transparent url("http://catb.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="wikifur.com/"] {
+	background: transparent url("//en.wikifur.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="starwars.wikia.com/"] {
+	background: transparent url("http://images4.wikia.nocookie.net/__cb62176/starwars/images/6/64/Favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="gaiaonline.com/"] {
+	background: transparent url("//gaiaonline.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="ogame.org/"] {
+	background: transparent url("http://ogame.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="simunomics.com/"] {
+	background: transparent url("http://simunomics.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="bright-shadows.net/"] {
+	background: transparent url("http://bright-shadows.net/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="istaria.com/"] {
+	background: transparent url("http://istaria.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="neopets.com/"] {
+	background: transparent url("http://www.neopets.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="entropiauniverse.com/"] {
+	background: transparent url("http://www.entropiauniverse.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="secondlife.com/"] {
+	background: transparent url("http://secondlife.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="hacker-project.com/"] {
+	background: transparent url("http://hacker-project.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="hacker-project.com/"] {
+	background: transparent url("http://hacker-project.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="planetside2.com/"] {
+	background: transparent url("//planetside2.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="ageofconan.com/"] {
+	background: transparent url("http://l3cdn.funcom.com/aoc/uploads/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="guildwars.com/"] {
+	background: transparent url("http://guildwars.com/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="nethack.org/"] {
+	background: transparent url("http://nethack.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+
+a[href*="gunz.aeriagames.com/"] {
+	background: transparent url("//gunz.aeriagames.com/themes/gz/favicon.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }

@@ -55,18 +55,38 @@ SQL;
 	<?php endforeach; ?>
 
 		<!-- todo - real games? -->
-		<h2>Internet</h2>
+		<h2>Browser Games</h2>
 		<ul>
-			<li>NeoPets</li>
-			<li>Gaia Online</li>
-			<li>Project Entropia</li>
-			<li>Second Life</li>
-			<li>Merchant Empires</li>
 			<li><a href="http://www.skylords.com/">SkyLords</a></li>
-			<li>TryOrDie</li>
+			<li><a href="http://www.neopets.com/">NeoPets</a></li>
+			<li><a href="http://www.gaiaonline.com/">Gaia Online</a></li>
 			<li><a href="http://www.hacker-project.com/">Hacker Project</a></li>
-			<li>EVE Online</li>
-			<li>Istaria</li>
+			<li><a href="http://simunomics.com/">Simunomics</a></li>
+			<li><a href="http://ogame.org/">OGame</a></li>
+			<li>Merchant Empires (formerly at advancedpowers.com)</li>
+			<li>TryOrDie</li>
+			<li><a href="http://www.nationstates.net/">NationStates</a></li>
+		</ul>
+
+		<h2>MMO with client software</h2>
+		<ul>
+			<li><a href="http://www.istaria.com/">Istaria</a></li>
+			<li><a href="http://www.eveonline.com/">EVE Online</a></li>
+			<li><a href="http://www.entropiauniverse.com/">Project Entropia</a></li>
+			<li><a href="http://secondlife.com/">Second Life</a></li>
+			<li><a href="http://www.ageofconan.com/">Age of Conan</a></li>
+			<li>PlanetSide</li>
+			<li><a href="https://www.planetside2.com/">PlanetSide 2</a></li>
+			<li><a href="http://www.guildwars.com/">Guild Wars</a></li>
+			<li><a href="http://gunz.aeriagames.com/">GunZ</a></li>
+			<li><a href="http://muonline.webzen.com/main">MU online</a></li>
+		</ul>
+
+		<h2>MUDs</h2>
+		<ul>
+			<li>Shades of Evil (Ack!Mud)</li>
+			<li>Glimmers of the Pattern</li>
+			<li>Mists of Time<!--motmud.ath.cx--></li>
 		</ul>
 
 		<h2>Flash games</h2>
@@ -94,7 +114,7 @@ SQL;
 			<li class="defeated">Neverwinter Nights: Shadows of Undrentide</li>
 			<li>Neverwinter Nights: Hordes of the Underdark</li>
 			<li>Microsoft Fury3</li>
-			<li>Baldur's Gate</li>
+			<li class="cleared">Baldur's Gate</li>
 			<li class="defeated">Baldur's Gate II + Throne of Bhaal</li>
 			<li class="cleared">Final Fantasy VII</li>
 			<li>Command &amp; Conquer: Red Alert + Counterstrike + The Aftermath</li>
@@ -109,13 +129,13 @@ SQL;
 			<li>The Elder Scrolls: Morrowind</li>
 			<li class="cleared">The Elder Scrolls: Oblivion (GOTY)</li>
 			<li>Final Fantasy VIII - at final dungeon (think I loaned these to a friend)</li>
+			<li>Krush Kill 'N Destroy</li>
 		</ul>
 
 		<h2>Computer</h2>
 		<ul>
-			<li>Krush Kill 'N Destroy</li>
 			<li>The Elder Scrolls: Daggerfall</li>
-			<li class="defeated">Nethack</li>
+			<li class="defeated"><a href="http://www.nethack.org/">Nethack</a></li>
 			<li class="cleared">Cave Story</li>
 			<li class="cleared"><a href="http://www.remar.se/daniel/iji.php">Iji</a></li>
 			<li><a href="http://minecraft.net/">Minecraft</a></li>
@@ -132,13 +152,16 @@ SQL;
 			<li>King of Kings</li>
 			<li>Vindicators</li>
 			<li>Xenophobia</li>
+			<li>Iron Tank</li>
+			<li>Sky Shark</li>
 		</ul>
 
 		<h2>Gameboy</h2>
 		<ul>
+			<!-- that spaceship game with the final boss being those eyedroppers with massive bullets -->
 			<li>Tetris</li>
 			<li>Qix</li>
-			<li>The Legend of Zelda: Link's Awakening - lost game at final boss</li>
+			<li>The Legend of Zelda: Link's Awakening - save game corrupted outside final boss</li>
 			<li>Pokemon Red (borrowed)</li>
 		</ul>
 
