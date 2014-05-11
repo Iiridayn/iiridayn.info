@@ -4,7 +4,7 @@ body {
 	background-color: #002b36; /* base03 */
 	color: #839496; /* base0 */
 }
-ul {
+ol,ul {
 	padding-left: 2em;
 }
 
@@ -25,6 +25,18 @@ h2+ul, h3+ul, h2+p, h3+p, p+ul, p+p {
 	margin-top: 0;
 }
 
+h1, h2, h3, p, li {
+	max-width: 40em; /* readability - 40-80 chars */
+}
+
+hr {
+	border-color: #073642; /* base02 */
+}
+.footer {
+	color: #586e75; /* base01 */
+	font-size: smaller;
+}
+
 ::-moz-selection {
 	background: #b58900; /* yellow */
 	color: #93a1a1; /* base1 */
@@ -43,6 +55,39 @@ a:visited {
 a:hover {
 	background-color: #073642; /* base02 */
 }
+
+/* hide for screens but not screen readers */
+/* @source http://webaim.org/techniques/css/invisiblecontent/ */
+.hidden {
+	position:absolute;
+	left:-10000px;
+	top:0;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* inline notes */
+a.note {
+	color: inherit;
+	border-bottom: 1px dashed #586e75; /* base01 */
+}
+a.note:hover, a.note:target {
+	background-color: inherit;
+	border: none;
+	position: relative; /* constrain span */
+}
+/* @todo: this might work better if it is a position relative popup instead */
+a.note:hover .hidden, a.note:target .hidden {
+	background-color: #073642; /* base02 */
+	margin-left: 0.2em;
+	padding: 0.2em;
+	top: -0.2em;
+	left: initial;
+	width: auto;
+	height: auto;
+}
+/* can do "footnotes" as end of paragraph notes with p>a+span.note or the like */
 
 
 /* games.php */

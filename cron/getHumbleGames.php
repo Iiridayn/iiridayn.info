@@ -48,4 +48,4 @@ foreach ($nodes as $node) {
 	$sql->execute(array($node->nodeValue, $node->getAttribute('href')));
 }
 
-unlink(__DIR__.'/humble');
+//unlink(__DIR__.'/humble');

@@ -35,7 +35,7 @@ a[href*="imdb.com/"] {
 }
 
 a[href*="fanfiction.net/"] {
-	background: transparent url("http://ffcdn2012.fictionpressllc.netdna-cdn.com/static/images/favicon_2010_site.ico") center left no-repeat;
+background: transparent url("//www.fanfiction.net/static/images/favicon_2010_site.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
@@ -292,8 +292,3 @@ a[href*="nethack.org/"] {
 	padding-left: 19px;
 }
 
-a[href*="gunz.aeriagames.com/"] {
-	background: transparent url("//gunz.aeriagames.com/themes/gz/favicon.ico") center left no-repeat;
-	background-size: 15px 15px;
-	padding-left: 19px;
-}

@@ -12,8 +12,28 @@
 		<h1>Video Games</h1>
 		<p>Bold text means that I've beat the game. Grouped by systems, somewhat chronological (someday).</p>
 
+		<h2>Games I've played through more than once</h2>
+		<ul>
+			<li>Baldur's Gate II</li>
+			<li>Legend of Spyro: Dawn of the Dragon</li>
+			<li>New Super Mario Bros. Wii</li>
+			<li>Nox</li>
+			<li>Portal (vicariously)</li>
+			<li>Portal 2 (vicariously)</li>
+			<li>Final Fantasy VII</li>
+			<li>Neverwinter Nights</li>
+			<li>Legend of Zelda: Orcarina of Time</li>
+			<!-- should do Twilight Princess, that was fun -->
+			<li><a href="http://www.remar.se/daniel/iji.php">Iji</a></li>
+			<li>StarFox 64</li>
+			<!-- should do Aquaria, that was also fun -->
+			<li>Uplink</li>
+			<!-- should do Cave story? -->
+		</ul>
+
 		<!-- gog, steam, media; cleared, defeated, cheated? -->
 		<!-- TODO: drop database - the website _is_ my database. -->
+		<!-- TODO: some steam stuff is added temporarily, is there a better solution than updating regularly? -->
 		<!-- Should have start/end markers for each section, strreplace the inside -->
 	<?php
 		$sql = <<<SQL
@@ -37,7 +57,7 @@ SQL;
 		<h2>Via <?= $systems[$system] ?></h2>
 		<ul class="<?= $system ?>">
 		<?php foreach ($games as $game): ?>
-			<li class="<?= $game['status'].' '.$game['owner'] ?>">
+			<li class="<?= $game['status'] ?>">
 			<?php if ($game['url']): ?>
 				<a href="<?= $game['url'] ?>"><?= $game['name'] ?></a>
 			<?php else: ?>
@@ -130,6 +150,7 @@ SQL;
 			<li class="cleared">The Elder Scrolls: Oblivion (GOTY)</li>
 			<li>Final Fantasy VIII - at final dungeon (think I loaned these to a friend)</li>
 			<li>Krush Kill 'N Destroy</li>
+			<li>Dragon Riders: Chronicles of Pern</li>
 		</ul>
 
 		<h2>Computer</h2>
