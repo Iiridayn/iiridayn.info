@@ -58,10 +58,17 @@ foreach ($nodes as $node) {
 	$gamedoc->loadHTML('<?xml encoding="utf-8">'.$game);
 	$gamexpath = new DOMXpath($gamedoc);
 
+	// TODO: quick hack, cleanup
 	$gamenode = $gamexpath->query('//h2/a')->item(0);
+	$link = '';
+	if ($gamenode) {
+		$link = $gamenode->getAttribute('href');
+	} else {
+		$gamenode = $gamexpath->query('//h2')->item(0);
+	}
 	$sql->execute(array(
 		trim($gamenode->nodeValue),
-		$gamenode->getAttribute('href'),
+		$link,
 		$gameid,
 	));
 }

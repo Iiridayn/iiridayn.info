@@ -292,3 +292,8 @@ a[href*="nethack.org/"] {
 	padding-left: 19px;
 }
 
+a[href*="mormon.org/"] {
+	background: transparent url("//edge.mormoncdn.org/favicon.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}

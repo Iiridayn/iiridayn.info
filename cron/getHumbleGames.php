@@ -3,34 +3,22 @@ require_once(dirname(__DIR__).'/environment.inc.php');
 require_once(dirname(__DIR__).'/db.inc.php');
 require_once(dirname(__DIR__).'/download.inc.php');
 
+$filedir = __DIR__.'/humble';
+if (!is_dir($filedir)) mkdir($filedir);
+
 $humble = new WebsiteAPI('https://www.humblebundle.com');
 //*
+// TODO: lazy login in WebsiteAPI?
 $humble->login('/login', array(
 	'username' => $_SERVER['HIB_USERNAME'],
 	'password' => $_SERVER['HIB_PASSWORD'],
 ));
 //*/
-$games = $humble->request('/home', __DIR__.'/humble');
 
-$doc = new DOMDocument();
-libxml_use_internal_errors(true);
-$doc->loadHTML($games);
-$xpath = new DOMXpath($doc);
-
-// TODO: audio only downloads are filtered, but movies are per platform
-// Filter by requiring that one of windows/mac/linux/android have a download
-$class = function ($class) {
-	return '[contains(concat(" ", normalize-space(@class), " "), " '.$class.' ")]';
-};
-$nodes = $xpath->query(
-	'//div'.$class('row')
-	.'/div'.$class('gameinfo').'['
-		.'following-sibling::div'.$class('windows').'/div'.$class('download')
-		.' or following-sibling::div'.$class('mac').'/div'.$class('download')
-		.' or following-sibling::div'.$class('linux').'/div'.$class('download')
-		.' or following-sibling::div'.$class('android').'/div'.$class('download')
-	.']/div'.$class('title').'/a'
-);
+$keypage = $humble->request('/home', $filedir.'/home');
+$keypos = strpos($keypage, "gamekeys: ")+10;
+$keystring = substr($keypage, $keypos, strpos($keypage, ']', $keypos)-$keypos+1);
+$keys = json_decode($keystring);
 
 $db->exec("DELETE FROM games WHERE system = 'humble'");
 
@@ -40,12 +28,36 @@ $sql = $db->prepare(<<<SQL
 SQL
 );
 
-// TODO: Dear Esther shows up three times, due to having three "name"s
-$names = array(); // can prevent (most) duplicates by checking name
-foreach ($nodes as $node) {
-	if (in_array($node->nodeValue, $names)) continue;
-	$names []= $node->nodeValue;
-	$sql->execute(array($node->nodeValue, $node->getAttribute('href')));
+// sometimes the bundle provides a game I already own
+$names = array();
+foreach ($keys as $key) {
+	$json = $humble->request("/api/v1/order/".$key, $filedir."/".$key);
+	$order = json_decode($json);
+	foreach ($order->subproducts as $game) {
+		$executable = false;
+		foreach ($game->downloads as $download) {
+			// Note: "Indie Game: The Movie" passes this check.
+			if (in_array($download->platform, array("windows", "mac", "linux", "android"))) {
+				$executable = true;
+				break;
+			}
+		}
+		if (!$executable || isset($names[$game->human_name])) continue;
+		$names[$game->human_name] = $key;
+		$sql->execute(array($game->human_name, $game->url));
+	}
 }
+var_dump($names);
 
-//unlink(__DIR__.'/humble');
+$rmdir = function ($dir) use (&$rmdir) {
+	if (!is_dir($dir)) return false;
+	foreach (glob($dir.'/*') as $file) {
+		if (is_dir($file))
+			$rmdir($file);
+		else unlink($file);
+	}
+	return rmdir($dir);
+};
+// keep the keys, flush the keylist; save server time
+//$rmdir($filedir);
+unlink($filedir."/home");
