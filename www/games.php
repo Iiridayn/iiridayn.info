@@ -29,6 +29,7 @@
 			<!-- should do Aquaria, that was also fun -->
 			<li>Uplink</li>
 			<!-- should do Cave story? -->
+			<li>Spore</li>
 		</ul>
 
 		<!-- gog, steam, media; cleared, defeated, cheated? -->
@@ -189,8 +190,14 @@ SQL;
 		<h2>N64</h2>
 		<ul>
 			<li class="defeated">The Legend of Zelda: Orcarina of Time</li>
-			<li class="cleared">Star Fox 64</li>
+			<li class="cleared">StarFox 64</li>
 			<li class="cleared">Gauntlet Legends</li>
+			<li class="cleared">Super Mario 64</li>
+			<li>Chameleon Twist</li>
+			<li class="cleared">Star Wars: Shadows of the Empire</li>
+			<li>Mission Impossible</li>
+			<li>Star Wars Racer: Episode 1</li>
+			<li>Iggy's reckin' balls</li>
 		</ul>
 
 		<h2>SNES (mostly emulated)</h2>

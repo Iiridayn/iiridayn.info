@@ -1,6 +1,6 @@
 /*
-This file and its contents are released under CC-BY with the condition that you
-reference "iiridayn.info" in a source code comment in the file.
+This file and its contents are released under CC-BY with the condition that
+you reference "iiridayn.info" in a source code comment in the file.
 See http://creativecommons.org/licenses/by/3.0/ for legalese.
 */
 
@@ -9,6 +9,8 @@ See http://creativecommons.org/licenses/by/3.0/ for legalese.
 /* Privacy note: each of these sites not already cached will know that you've been here */
 /* NOTE: IE8 and below do not support background-size, might want to use conditional comments on this file */
 /* TODO: resolve privacy concern by using a local image forwarder - beware security concerns with it */
+
+/* TODO: links to PDFs to have a PDF icon, as also links to other non-html media */
 
 a[href^="mailto:"] {
 	background: transparent url("data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA5ubmAOjo6AD///8AQkJCALCwsADJyckA2dnZAH19fQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREd3d3d3d3REdDMzMzM2RkQ3QzMzMzRzRDN0MUQTRzNEMxRUREVBM0QzdUQiRFczRHdUEzMxRXdEdEEzMzMUR0RGMzMzMzNoRERERERERERAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA") center left no-repeat;

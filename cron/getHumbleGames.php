@@ -47,7 +47,7 @@ foreach ($keys as $key) {
 		$sql->execute(array($game->human_name, $game->url));
 	}
 }
-var_dump($names);
+//var_dump($names);
 
 $rmdir = function ($dir) use (&$rmdir) {
 	if (!is_dir($dir)) return false;
