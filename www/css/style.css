@@ -25,8 +25,20 @@ h2+ul, h3+ul, h2+p, h3+p, p+ul, p+p {
 	margin-top: 0;
 }
 
+/* Make text more readable */
 h1, h2, h3, p, li {
-	max-width: 40em; /* readability - 40-80 chars */
+	max-width: 40em; /* readability - 50-80 chars */
+}
+h1 {
+	max-width: 20em; /* 2em font-size via normalize */
+}
+h2 {
+	font-size: 1.5em; /* formalizing */
+	max-width: 26.66em;
+}
+h3 {
+	font-size: 1.2em; /* formalizing */
+	max-width: 33.33em;
 }
 
 hr {
