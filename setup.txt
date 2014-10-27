@@ -12,3 +12,8 @@ HTTPD
 =====
 put password (created above) into SetEnv ... environment.conf
 include .../environment.conf
+
+OTHER SETUP
+===========
+create www/cache w/permissions 0777
+create var w/permissions 0777, var/wishlist.txt 0777

@@ -7,52 +7,66 @@
 		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/icons.css" />
 	</head>
+	<!-- TODO: AJAX/DB - js solution to mark which items have been purchased; default off with clearly on visible button (so I don't see during testing) -->
 	<body>
 		<h1>Things that I would like to own</h1>
 		<p>So, since this is going to be a literal <em>wish</em>list, some things are idle, some things are projects, and some things I merely have yet to buy (but will). For most who wish to get me something from this list I would recommend things that I was going to buy anyway - just make sure that I don't actually buy it before you gift it!</p>
+		<p>For Christmas 2014 purchases you may wish to coordinate with Mom.</li>
 
 		<h2>General Gift Ideas</h2>
 		<ul>
 			<li>New (and unusual) flavors</li>
-			<li>Chocolate preferred if buying sweets</li>
+			<li>Chocolate preferred if buying sweets - Kinder Bueno or Reeses for candy bar</li>
 			<li>Personally recommended Spec Fic books I don't own</li>
+			<li>Fiction with dragon protagonists which I don't already own.</li>
+			<li>Good native spanish fiction.</li>
 		</ul>
 
-		<h2>Things that would like to purchase</h2>
+		<h2>Specific things I will probably buy eventually</h2>
 		<ul>
-			<li>VOIP computer camera (for chatting with Matthew)</li>
-			<li>Quality computer microphone (wind baffle thing at least, have cheap one - for amature/pro audio recording)</li>
-			<li>Shower mirror (doesn't fog up, suction cup)</li>
-			<li><a href="http://neondragonart.com/Store/tshirt.htm">Inner Dragon</a> t-shirt design - color uncertain, whatever looks good on me. Can see decal in lower right of second sample image on page.</li>
-			<li>T-shirt design, <a href="http://www.welovefine.com/498-20-cooler.html">20% Cooler</a>. Also like <a href="http://www.welovefine.com/849-just-got-20-cooler.html">Just Got 20% Cooler</a>, sometimes prefer over previous design.</li>
-			<li>Mortar and pestle for cooking (grinding salsa/garlic/spices)</li>
-			<li>Good native spanish fiction - Don Quixote in particular. Anything with dragon protagonists.</li>
+			<li id="webcam">VOIP computer camera (for chatting with Matthew)</li>
+			<li id="microphone">Quality computer microphone (wind baffle thing at least, have cheap one - for amature/pro audio recording)</li>
+			<li id="mirror">Shower mirror (doesn't fog up, suction cup)</li>
+			<li id="dragon-shirt"><a href="http://neondragonart.com/Store/tshirt.htm">Inner Dragon</a> t-shirt design - color uncertain, whatever looks good on me. Can see decal in lower right of second sample image on page.</li>
+			<li id="cooler-shirt">T-shirt design, <a href="http://www.welovefine.com/498-20-cooler.html">20% Cooler</a>. Also like <a href="http://www.welovefine.com/849-just-got-20-cooler.html">Just Got 20% Cooler</a>, sometimes prefer over previous design.</li>
+			<li id="pestle">Mortar and pestle for cooking (grinding salsa/garlic/spices)</li>
+			<li id="lightbox">Decent lightbox - large area, not upward facing, 10k lux, etc.</li>
+			<li id="eggbeater">Egg beater</li>
 		</ul>
 
-		<h2>Online Wishlists</h2>
+		<h2>Books</h2>
 		<ul>
+			<li id="quixote">Don Quixote in Spanish (have in English).</li>
+		</ul>
+
+		<h2>Specific things I probably won't buy myself</h2>
+		<ul>
+			<li id="poofy-pants">Replacement loose ankle-tie style pants</li>
+			<li id="belt">Possibly a couple strong belts</li>
+			<li id="pajamas">Possibly a couple pajama bottoms</li>
+		</ul>
+
+		<h2>Amazon Wishlists</h2>
+		<ul>
+			<li><a href="http://www.amazon.com/gp/registry/wishlist/13DERBIBMDSDU">Things that I will actually buy, but have not yet</a></li>
 			<li><a href="http://www.amazon.com/gp/registry/wishlist/3QX8ES2WGDVQH">Things that I find interesting and might buy</a></li>
-			<li><a href="http://www.amazon.com/gp/registry/wishlist/13DERBIBMDSDU">Things that I will actually buy, but have not yet</a> - note that as of Dec 2013 everything within my reasonable price-range has been cleaned out from this list (though not removed, so avoid this one for now).</li>
 		</ul>
 
 		<h2>Projects</h2>
 		<p>Supplies, training, equipment, or aid appreciated.</p>
 		<ul>
-			<li>Carrying pouches</li>
-			<li><s>Winter cloak</s></li>
-			<li>Quadsuit hand stilts - articulated finger/toes</li>
+			<li id="pouches">Carrying pouches</li>
+			<li id="cloak">Winter cloak</li>
+			<li id="qstilts">Quadsuit hand stilts - articulated finger/toes</li>
 		</ul>
 
 		<h2>Already experienced, wish to own</h2>
 		<p>Most of the <a href="anime.html">anime</a> which I've seen I would like to own if I don't already.</p>
 		<ul>
-			<li>Especially HikuGo if you can find a decent cheap copy of it</li>
-			<li>Dragonheart, DVD/BD (have VCD)</li>
+			<li id="hikugo">Especially Hikaru No Go if you can find a decent cheap copy of it</li>
+			<li id="dragonheart">Dragonheart, DVD/BD (have VCD)</li>
 		</ul>
 
-		<h2>Books</h2>
-		<ul>
-			<li>The rest of the Monster Hunters International series (have book 1)</li>
-		</ul>
+		<script src="/js/wishlist.js"></script>
 	</body>
 </html>

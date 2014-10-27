@@ -19,283 +19,280 @@ a[href^="mailto:"] {
 }
 
 a[href*="youtube.com/"] {
-	background: transparent url("http://s.ytimg.com/yts/img/favicon-vfldLzJxy.ico") center left no-repeat;
+	background: transparent url("/cache/youtube.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="wikipedia.org/"] {
-	background: transparent url("//en.wikipedia.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/wikipedia.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="imdb.com/"] {
-	background: transparent url("http://i.media-imdb.com/images/desktop-favicon.ico") center left no-repeat;
+	background: transparent url("/cache/imdb.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="fanfiction.net/"] {
-background: transparent url("//www.fanfiction.net/static/images/favicon_2010_site.ico") center left no-repeat;
+background: transparent url("/cache/fanfiction.net.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="furry.org.au/chakat/"] {
-	background: transparent url("http://furry.org.au/chakat/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/furry.org.au%2Fchakat.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="stackoverflow.com/"] {
-	background: transparent url("http://cdn.sstatic.net/stackoverflow/img/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/stackoverflow.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="hulu.com/"] {
-	background: transparent url("http://www.hulu.com/fat-favicon.ico") center left no-repeat;
+	background: transparent url("/cache/hulu.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="mormon.org/"] {
-	background: transparent url("//edge.mormoncdn.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/mormon.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="lesswrong.com/"] {
-	background: transparent url("http://lesswrong.com/static/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/lesswrong.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="gog.com/"] {
-	background: transparent url("http://static.gog.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/gog.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="steamcommunity.com/"] {
-	background: transparent url("//steamcommunity.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/steamcommunity.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="skylords.com/"] {
-	background: transparent url("//skylords.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/skylords.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="minecraft.net/"] {
-	background: transparent url("//minecraft.net/favicon.png") center left no-repeat;
+	background: transparent url("/cache/minecraft.net.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="deviantart.com/"] {
-	background: transparent url("//i.deviantart.net/icons/favicon.png") center left no-repeat;
-	background-size: 15px 15px;
-	padding-left: 19px;
-}
-
-a[href*="deviantart.com/"] {
-	background: transparent url("//i.deviantart.net/icons/favicon.png") center left no-repeat;
+	background: transparent url("/cache/deviantart.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="sofurry.com/"] {
-	background: transparent url("//www.sofurry.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/sofurry.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="pinboard.in/"] {
-	background: transparent url("https://pinboard.in/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/pinboard.in.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="news.ycombinator.com/"] {
-	background: transparent url("https://news.ycombinator.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/news.ycombinator.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="linkedin.com/"] {
-	background: transparent url("//linkedin.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/linkedin.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="facebook.com/"] {
-	background: transparent url("//fbstatic-a.akamaihd.net/rsrc.php/yP/r/Ivn-CVe5TGK.ico") center left no-repeat;
+	background: transparent url("/cache/facebook.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="plus.google.com/"] {
-	background: transparent url("//ssl.gstatic.com/s2/oz/images/faviconr3.ico") center left no-repeat;
+	background: transparent url("/cache/plus.google.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="pof.com/"] {
-	background: transparent url("//www.pof.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/pof.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="github.com/"] {
-	background: transparent url("https://github.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/github.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="gate.eveonline.com/"] {
-	background: transparent url("https://gate.eveonline.com/eve_favicon.ico") center left no-repeat;
+	background: transparent url("/cache/gate.eveonline.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="www.eveonline.com/"] {
-	background: transparent url("//www.eveonline.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/www.eveonline.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="community.eveonline.com/"] {
-	background: transparent url("//community.eveonline.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/community.eveonline.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="creativecommons.org/"] {
-	background: transparent url("//creativecommons.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/creativecommons.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="sourceforge.net/"] {
-	background: transparent url("//sourceforge.net/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/sourceforge.net.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="indeed.com/"] {
-	background: transparent url("http://www.indeed.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/indeed.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="catb.org/"] {
-	background: transparent url("http://catb.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/catb.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="wikifur.com/"] {
-	background: transparent url("//en.wikifur.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/wikifur.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="starwars.wikia.com/"] {
-	background: transparent url("http://images4.wikia.nocookie.net/__cb62176/starwars/images/6/64/Favicon.ico") center left no-repeat;
+	background: transparent url("/cache/starwars.wikia.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="gaiaonline.com/"] {
-	background: transparent url("//gaiaonline.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/gaiaonline.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="ogame.org/"] {
-	background: transparent url("http://ogame.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/ogame.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="simunomics.com/"] {
-	background: transparent url("http://simunomics.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/simunomics.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="bright-shadows.net/"] {
-	background: transparent url("http://bright-shadows.net/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/bright-shadows.net.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="istaria.com/"] {
-	background: transparent url("http://istaria.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/istaria.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="neopets.com/"] {
-	background: transparent url("http://www.neopets.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/neopets.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="entropiauniverse.com/"] {
-	background: transparent url("http://www.entropiauniverse.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/entropiauniverse.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="secondlife.com/"] {
-	background: transparent url("http://secondlife.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/secondlife.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="hacker-project.com/"] {
-	background: transparent url("http://hacker-project.com/favicon.ico") center left no-repeat;
-	background-size: 15px 15px;
-	padding-left: 19px;
-}
-
-a[href*="hacker-project.com/"] {
-	background: transparent url("http://hacker-project.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/hacker-project.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="planetside2.com/"] {
-	background: transparent url("//planetside2.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/planetside2.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="ageofconan.com/"] {
-	background: transparent url("http://l3cdn.funcom.com/aoc/uploads/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/ageofconan.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="guildwars.com/"] {
-	background: transparent url("http://guildwars.com/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/guildwars.com.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="nethack.org/"] {
-	background: transparent url("http://nethack.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/nethack.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
 
 a[href*="mormon.org/"] {
-	background: transparent url("//edge.mormoncdn.org/favicon.ico") center left no-repeat;
+	background: transparent url("/cache/mormon.org.ico") center left no-repeat;
 	background-size: 15px 15px;
 	padding-left: 19px;
 }
+
+/*
+Animated... don't like it
+a[href*="welovefine.com/"] {
+	background: transparent url("/cache/welovefine.com.ico") center left no-repeat;
+	background-size: 15px 15px;
+	padding-left: 19px;
+}
+*/

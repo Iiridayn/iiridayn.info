@@ -1,3 +1,4 @@
 environment.conf
 .*
-
+www/cache/
+var/
